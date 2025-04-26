@@ -1,6 +1,6 @@
-
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
+import aygulImage from "/public/lovable-uploads/5a82a45e-8dae-47f5-96bb-e4fbc3aaca10.png";
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -39,7 +39,7 @@ const HeroSection = () => {
           <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center animate-fade-in">
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-therapy-accent shadow-lg transform transition-all duration-300 hover:scale-105">
               <img
-                src="/lovable-uploads/5a82a45e-8dae-47f5-96bb-e4fbc3aaca10.png"
+                src={aygulImage}
                 alt="Aygul Tatlici"
                 className="w-full h-full object-cover object-center"
               />
