@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="mb-4 md:mb-0">
             <h3 className="font-playfair text-xl font-semibold">Aygul Tatlici</h3>
             <p className="text-white/80 text-sm">
-              Registered Psychotherapist (Qualifying)
+              Registered Psychotherapist
             </p>
           </div>
           

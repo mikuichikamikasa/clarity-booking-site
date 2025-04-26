@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/popover";
 
 const ContactSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { toast } = useToast();
   const [date, setDate] = useState<Date>();
   
@@ -52,7 +52,7 @@ const ContactSection = () => {
       
       toast({
         title: t("contact.success"),
-        description: "We'll get back to you soon!",
+        description: language === "tr" ? "En kısa sürede size geri döneceğiz!" : "We'll get back to you soon!",
         variant: "default",
       });
       
@@ -67,8 +67,8 @@ const ContactSection = () => {
       
     } catch (error) {
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
+        title: language === "tr" ? "Hata" : "Error",
+        description: language === "tr" ? "Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin." : "Failed to send message. Please try again.",
         variant: "destructive",
       });
     } finally {
@@ -96,7 +96,7 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder="Your name"
+                  placeholder={language === "tr" ? "Adınız" : "Your name"}
                   className="w-full transition-all duration-300 focus:ring-2 focus:ring-therapy-primary"
                 />
               </div>
@@ -112,7 +112,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="Your email"
+                  placeholder={language === "tr" ? "E-posta adresiniz" : "Your email"}
                   className="w-full transition-all duration-300 focus:ring-2 focus:ring-therapy-primary"
                 />
               </div>
@@ -128,14 +128,14 @@ const ContactSection = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  placeholder="Your phone number"
+                  placeholder={language === "tr" ? "Telefon numaranız" : "Your phone number"}
                   className="w-full transition-all duration-300 focus:ring-2 focus:ring-therapy-primary"
                 />
               </div>
 
               <div className="space-y-4">
                 <label className="block mb-2 text-sm font-medium text-gray-700">
-                  Service Type
+                  {language === "tr" ? "Hizmet Türü" : "Service Type"}
                 </label>
                 <div className="space-y-2">
                   <label className="flex items-center space-x-2">
@@ -147,7 +147,7 @@ const ContactSection = () => {
                       onChange={(e) => setServiceType(e.target.value as "psychotherapy")}
                       className="w-4 h-4 text-therapy-primary"
                     />
-                    <span>Psychotherapy (for residents of Ontario)</span>
+                    <span>{language === "tr" ? "Psikoterapi (Ontario sakinleri için)" : "Psychotherapy (for residents of Ontario)"}</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
@@ -158,14 +158,14 @@ const ContactSection = () => {
                       onChange={(e) => setServiceType(e.target.value as "coaching")}
                       className="w-4 h-4 text-therapy-primary"
                     />
-                    <span>Coaching (worldwide)</span>
+                    <span>{language === "tr" ? "Koçluk (dünya çapında)" : "Coaching (worldwide)"}</span>
                   </label>
                 </div>
               </div>
 
               <div>
                 <label className="block mb-2 text-sm font-medium text-gray-700">
-                  Preferred Consultation Date
+                  {language === "tr" ? "Tercih Edilen Danışma Tarihi" : "Preferred Consultation Date"}
                 </label>
                 <Popover>
                   <PopoverTrigger asChild>
@@ -173,7 +173,7 @@ const ContactSection = () => {
                       variant="outline"
                       className={`w-full justify-start text-left font-normal ${!date && 'text-muted-foreground'}`}
                     >
-                      {date ? format(date, "PPP") : <span>Pick a date</span>}
+                      {date ? format(date, "PPP") : <span>{language === "tr" ? "Bir tarih seçin" : "Pick a date"}</span>}
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-auto p-0">
@@ -198,7 +198,7 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  placeholder="Your message"
+                  placeholder={language === "tr" ? "Mesajınız" : "Your message"}
                   className="w-full h-32 transition-all duration-300 focus:ring-2 focus:ring-therapy-primary"
                 />
               </div>
@@ -208,7 +208,7 @@ const ContactSection = () => {
                 disabled={isSubmitting || !serviceType}
                 className="w-full py-6 bg-therapy-primary hover:bg-therapy-primary/90 text-white transform transition-all duration-300 hover:scale-105"
               >
-                {isSubmitting ? "Sending..." : t("contact.submit")}
+                {isSubmitting ? (language === "tr" ? "Gönderiliyor..." : "Sending...") : t("contact.submit")}
               </Button>
             </form>
           </div>
@@ -255,14 +255,16 @@ const ContactSection = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-therapy-dark hover:text-therapy-primary transition-colors"
+                  aria-label={language === "tr" ? "Instagram sayfamızı ziyaret edin" : "Visit our Instagram page"}
                 >
                   Instagram
                 </a>
                 <a 
                   href="tel:+14376887521" 
                   className="text-therapy-dark hover:text-therapy-primary transition-colors"
+                  aria-label={language === "tr" ? "Bizi telefonla arayın" : "Call us by phone"}
                 >
-                  +1 (437) 688-7521
+                  {language === "tr" ? "Telefon" : "Phone"}: +1 (437) 688-7521
                 </a>
               </div>
             </div>

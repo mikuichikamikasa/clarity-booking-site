@@ -1,4 +1,3 @@
-
 interface Translations {
   [key: string]: {
     [key: string]: string;
@@ -17,13 +16,13 @@ const translations: Translations = {
 
     // Hero Section
     "hero.title": "Aygul Tatlici",
-    "hero.subtitle": "Registered Psychotherapist (Qualifying)",
+    "hero.subtitle": "Registered Psychotherapist",
     "hero.description": "Helping you navigate anxiety, depression, ADHD, and trauma to regain clarity, motivation, and purpose.",
     "hero.cta": "Book Free Consultation",
 
     // About Section
     "about.title": "About Me",
-    "about.credentials": "Registered Psychotherapist (Qualifying) | Verified by Psychology Today",
+    "about.credentials": "Registered Psychotherapist | Verified by Psychology Today",
     "about.paragraph1": "I am a Master's-Level practicum student in Counselling Psychology, currently providing therapy under the clinical supervision of an approved supervisor. I'm genuinely looking forward to supporting you on your journey toward healing, growth, and positive change.",
     "about.paragraph2": "I know how overwhelming it can feel to struggle with depression, trauma, anxiety, procrastination, and the pressure of work stress. Feeling stuck and unsure is okay — those challenges are real, and you deserve support. I'm here to walk alongside you, helping you find clarity, healing, and renewed strength when ready.",
     "about.qualifications": "I completed a Master's in Counselling Psychotherapy and have training in ACT, CBT and Solution-Focused Approaches. I have experience of helping adults, kids, struggling with depression, anxiety, PTSD, adjustment disorders, ADHD, specific phobias, burnout and works stress.",
@@ -40,7 +39,6 @@ const translations: Translations = {
     "expertise.item7": "Parenting Challenges",
     "expertise.item8": "Life Transitions",
     "expertise.item9": "Chronic Pain",
-    "expertise.approach": "I often use Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT) and Solution-Focused Brief Therapy (SFBT). During our first session, we'll talk about what's brought you to therapy and what you would like to achieve, after which we will collaborate to reach your goals.",
 
     // Services Section
     "services.title": "My Approach",
@@ -86,21 +84,21 @@ const translations: Translations = {
 
     // Hero Section
     "hero.title": "Aygül Tatlıcı",
-    "hero.subtitle": "Kayıtlı Psikoterapist (Aday)",
-    "hero.description": "Anksiyete, depresyon, DEHB ve travma ile başa çıkmanıza yardımcı olarak netlik, motivasyon ve amaç kazanmanızı sağlıyorum.",
+    "hero.subtitle": "Kayıtlı Psikoterapist",
+    "hero.description": "Anksiyete, depresyon, ADHD ve travma ile başa çıkmanıza yardımcı olarak netlik, motivasyon ve amaç kazanmanızı sağlıyorum.",
     "hero.cta": "Ücretsiz Danışma Randevusu Al",
 
     // About Section
     "about.title": "Hakkımda",
-    "about.credentials": "Kayıtlı Psikoterapist (Aday) | Psychology Today tarafından doğrulanmıştır",
+    "about.credentials": "Kayıtlı Psikoterapist | Psychology Today tarafından doğrulanmıştır",
     "about.paragraph1": "Danışmanlık Psikolojisi alanında yüksek lisans öğrencisiyim ve şu anda onaylı bir süpervizör gözetiminde terapi hizmeti vermekteyim. İyileşme, büyüme ve olumlu değişim yolculuğunuzda size destek olmak için sabırsızlanıyorum.",
     "about.paragraph2": "Depresyon, travma, anksiyete, erteleme ve iş stresinin yarattığı baskıyla mücadele etmenin ne kadar bunaltıcı olabileceğini biliyorum. Takılıp kalmış ve emin olamamak normaldir — bu zorluklar gerçektir ve desteği hak ediyorsunuz. Ben yanınızda olarak, hazır olduğunuzda netlik, iyileşme ve yenilenmiş güç bulmanıza yardımcı olmak için buradayım.",
-    "about.qualifications": "Danışmanlık Psikoterapisi alanında yüksek lisans yaptım ve ACT, BDT ve Çözüm Odaklı Yaklaşımlar konusunda eğitimim var. Depresyon, anksiyete, TSSB, uyum bozuklukları, DEHB, özel fobiler, tükenmişlik ve iş stresi ile mücadele eden yetişkinlere ve çocuklara yardım etme deneyimim var.",
+    "about.qualifications": "Danışmanlık Psikoterapisi alanında yüksek lisans yaptım ve ACT, BDT ve Çözüm Odaklı Yaklaşımlar konusunda eğitimim var. Depresyon, anksiyete, TSSB, uyum bozuklukları, ADHD, özel fobiler, tükenmişlik ve iş stresi ile mücadele eden yetişkinlere ve çocuklara yardım etme deneyimim var.",
 
     // Expertise Section
     "expertise.title": "Uzmanlık Alanları",
     "expertise.description": "Çeşitli zorluklarla karşılaşan danışanlara yardımcı olmada uzmanım:",
-    "expertise.item1": "DEHB",
+    "expertise.item1": "ADHD",
     "expertise.item2": "Anksiyete ve Panik Ataklar",
     "expertise.item3": "Depresyon",
     "expertise.item4": "Travma ve TSSB",
@@ -109,7 +107,6 @@ const translations: Translations = {
     "expertise.item7": "Ebeveynlik Zorlukları",
     "expertise.item8": "Hayat Geçişleri",
     "expertise.item9": "Kronik Ağrı",
-    "expertise.approach": "Genellikle Bilişsel Davranışçı Terapi (BDT), Kabul ve Kararlılık Terapisi (ACT) ve Çözüm Odaklı Kısa Terapi (ÇOKT) kullanıyorum. İlk seansımızda, sizi terapiye getiren şeyin ne olduğunu ve neye ulaşmak istediğinizi konuşacağız, ardından hedeflerinize ulaşmak için işbirliği yapacağız.",
 
     // Services Section
     "services.title": "Yaklaşımım",
