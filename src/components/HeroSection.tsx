@@ -24,7 +24,7 @@ const HeroSection = () => {
               {t("hero.subtitle")}
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              Healing and transformation begin with authentic care and connection, and change becomes powerful when someone believes in your potential and ability to grow.
+              {t("hero.philosophy")}
             </p>
             <p className="text-lg text-gray-700 mb-8">
               {t("hero.description")}

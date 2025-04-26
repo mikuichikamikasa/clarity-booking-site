@@ -19,6 +19,7 @@ const translations: Translations = {
     "hero.subtitle": "Registered Psychotherapist",
     "hero.description": "Helping you navigate anxiety, depression, ADHD, and trauma to regain clarity, motivation, and purpose.",
     "hero.cta": "Book Free Consultation",
+    "hero.philosophy": "Healing and transformation begin with authentic care and connection, and change becomes powerful when someone believes in your potential and ability to grow.",
 
     // About Section
     "about.title": "About Me",
@@ -87,6 +88,7 @@ const translations: Translations = {
     "hero.subtitle": "Kayıtlı Psikoterapist",
     "hero.description": "Anksiyete, depresyon, ADHD ve travma ile başa çıkmanıza yardımcı olarak netlik, motivasyon ve amaç kazanmanızı sağlıyorum.",
     "hero.cta": "Ücretsiz Danışma Randevusu Al",
+    "hero.philosophy": "İyileşme ve dönüşüm, özgün ilgi ve bağlantıyla başlar ve birisi sizin potansiyelinize ve büyüme yeteneğinize inandığında değişim güçlenir.",
 
     // About Section
     "about.title": "Hakkımda",
