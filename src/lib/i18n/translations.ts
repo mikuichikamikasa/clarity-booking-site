@@ -1,0 +1,149 @@
+
+interface Translations {
+  [key: string]: {
+    [key: string]: string;
+  };
+}
+
+const translations: Translations = {
+  en: {
+    // Navigation
+    "nav.home": "Home",
+    "nav.about": "About",
+    "nav.services": "Services",
+    "nav.pricing": "Pricing",
+    "nav.contact": "Contact",
+    "nav.language": "Türkçe",
+
+    // Hero Section
+    "hero.title": "Aygul Tatlici",
+    "hero.subtitle": "Registered Psychotherapist (Qualifying)",
+    "hero.description": "Helping you navigate anxiety, depression, ADHD, and trauma to regain clarity, motivation, and purpose.",
+    "hero.cta": "Book Free Consultation",
+
+    // About Section
+    "about.title": "About Me",
+    "about.credentials": "Registered Psychotherapist (Qualifying) | Verified by Psychology Today",
+    "about.paragraph1": "I am a Master's-Level practicum student in Counselling Psychology, currently providing therapy under the clinical supervision of an approved supervisor. I'm genuinely looking forward to supporting you on your journey toward healing, growth, and positive change.",
+    "about.paragraph2": "I know how overwhelming it can feel to struggle with depression, trauma, anxiety, procrastination, and the pressure of work stress. Feeling stuck and unsure is okay — those challenges are real, and you deserve support. I'm here to walk alongside you, helping you find clarity, healing, and renewed strength when ready.",
+    "about.qualifications": "I completed a Master's in Counselling Psychotherapy and have training in ACT, CBT and Solution-Focused Approaches. I have experience of helping adults, kids, struggling with depression, anxiety, PTSD, adjustment disorders, ADHD, specific phobias, burnout and works stress.",
+
+    // Expertise Section
+    "expertise.title": "Areas of Expertise",
+    "expertise.description": "I specialize in helping clients with a variety of challenges:",
+    "expertise.item1": "ADHD",
+    "expertise.item2": "Anxiety & Panic Attacks",
+    "expertise.item3": "Depression",
+    "expertise.item4": "Trauma & PTSD",
+    "expertise.item5": "Stress & Burnout",
+    "expertise.item6": "Specific Phobias",
+    "expertise.item7": "Parenting Challenges",
+    "expertise.item8": "Life Transitions",
+    "expertise.item9": "Chronic Pain",
+    "expertise.approach": "I often use Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT) and Solution-Focused Brief Therapy (SFBT). During our first session, we'll talk about what's brought you to therapy and what you would like to achieve, after which we will collaborate to reach your goals.",
+
+    // Services Section
+    "services.title": "My Approach",
+    "services.description": "Using evidence-based methods like SFBT, ACT and CBT, we'll find tools that work for you, whether you're striving to improve focus, manage your emotions, or find a sense of balance and fulfillment in becoming the version of yourself you want to be.",
+    "services.quote": "Imagine stepping into a space where your challenges are seen as opportunities for growth. In counselling, we'll focus on your strengths and find ways to move forward.",
+
+    // Pricing Section
+    "pricing.title": "Pricing",
+    "pricing.individual": "Individual Sessions",
+    "pricing.individual.price": "$120",
+    "pricing.couples": "Couple Sessions",
+    "pricing.couples.price": "$250",
+    "pricing.note": "Sliding scale available for those who qualify",
+    "pricing.payment": "Payment Methods:",
+    "pricing.payment.methods": "Cheque, e-Transfer",
+    "pricing.insurance": "Check fees and, if listed, ask to verify your insurance coverage.",
+
+    // Contact Section
+    "contact.title": "Book an Appointment",
+    "contact.description": "Feel free to reach out for a free 15-minute consultation.",
+    "contact.name": "Your Name",
+    "contact.email": "Email Address",
+    "contact.phone": "Phone Number",
+    "contact.message": "Your Message",
+    "contact.submit": "Send Message",
+    "contact.success": "Message sent successfully!",
+    "contact.error": "There was an error sending your message. Please try again.",
+    "contact.phone.direct": "Phone: ",
+    "contact.email.direct": "Email: ",
+    "contact.consult": "Call or email me for a free 15-minute consultation now",
+
+    // Footer
+    "footer.rights": "All rights reserved",
+  },
+  tr: {
+    // Navigation
+    "nav.home": "Ana Sayfa",
+    "nav.about": "Hakkımda",
+    "nav.services": "Hizmetler",
+    "nav.pricing": "Ücretlendirme",
+    "nav.contact": "İletişim",
+    "nav.language": "English",
+
+    // Hero Section
+    "hero.title": "Aygül Tatlıcı",
+    "hero.subtitle": "Kayıtlı Psikoterapist (Aday)",
+    "hero.description": "Anksiyete, depresyon, DEHB ve travma ile başa çıkmanıza yardımcı olarak netlik, motivasyon ve amaç kazanmanızı sağlıyorum.",
+    "hero.cta": "Ücretsiz Danışma Randevusu Al",
+
+    // About Section
+    "about.title": "Hakkımda",
+    "about.credentials": "Kayıtlı Psikoterapist (Aday) | Psychology Today tarafından doğrulanmıştır",
+    "about.paragraph1": "Danışmanlık Psikolojisi alanında yüksek lisans öğrencisiyim ve şu anda onaylı bir süpervizör gözetiminde terapi hizmeti vermekteyim. İyileşme, büyüme ve olumlu değişim yolculuğunuzda size destek olmak için sabırsızlanıyorum.",
+    "about.paragraph2": "Depresyon, travma, anksiyete, erteleme ve iş stresinin yarattığı baskıyla mücadele etmenin ne kadar bunaltıcı olabileceğini biliyorum. Takılıp kalmış ve emin olamamak normaldir — bu zorluklar gerçektir ve desteği hak ediyorsunuz. Ben yanınızda olarak, hazır olduğunuzda netlik, iyileşme ve yenilenmiş güç bulmanıza yardımcı olmak için buradayım.",
+    "about.qualifications": "Danışmanlık Psikoterapisi alanında yüksek lisans yaptım ve ACT, BDT ve Çözüm Odaklı Yaklaşımlar konusunda eğitimim var. Depresyon, anksiyete, TSSB, uyum bozuklukları, DEHB, özel fobiler, tükenmişlik ve iş stresi ile mücadele eden yetişkinlere ve çocuklara yardım etme deneyimim var.",
+
+    // Expertise Section
+    "expertise.title": "Uzmanlık Alanları",
+    "expertise.description": "Çeşitli zorluklarla karşılaşan danışanlara yardımcı olmada uzmanım:",
+    "expertise.item1": "DEHB",
+    "expertise.item2": "Anksiyete ve Panik Ataklar",
+    "expertise.item3": "Depresyon",
+    "expertise.item4": "Travma ve TSSB",
+    "expertise.item5": "Stres ve Tükenmişlik",
+    "expertise.item6": "Özel Fobiler",
+    "expertise.item7": "Ebeveynlik Zorlukları",
+    "expertise.item8": "Hayat Geçişleri",
+    "expertise.item9": "Kronik Ağrı",
+    "expertise.approach": "Genellikle Bilişsel Davranışçı Terapi (BDT), Kabul ve Kararlılık Terapisi (ACT) ve Çözüm Odaklı Kısa Terapi (ÇOKT) kullanıyorum. İlk seansımızda, sizi terapiye getiren şeyin ne olduğunu ve neye ulaşmak istediğinizi konuşacağız, ardından hedeflerinize ulaşmak için işbirliği yapacağız.",
+
+    // Services Section
+    "services.title": "Yaklaşımım",
+    "services.description": "ÇOKT, ACT ve BDT gibi kanıta dayalı yöntemler kullanarak, odaklanmanızı geliştirmek, duygularınızı yönetmek veya olmak istediğiniz kişi haline gelmede denge ve tatmin duygusu bulmak için çabalıyor olsanız da, sizin için işe yarayan araçlar bulacağız.",
+    "services.quote": "Zorluklarınızın büyüme fırsatları olarak görüldüğü bir alana adım attığınızı hayal edin. Danışmanlıkta, güçlü yönlerinize odaklanacak ve ilerleme yolları bulacağız.",
+
+    // Pricing Section
+    "pricing.title": "Ücretlendirme",
+    "pricing.individual": "Bireysel Seanslar",
+    "pricing.individual.price": "$120",
+    "pricing.couples": "Çift Seansları",
+    "pricing.couples.price": "$250",
+    "pricing.note": "Hak sahipleri için kademeli ücretlendirme mevcuttur",
+    "pricing.payment": "Ödeme Yöntemleri:",
+    "pricing.payment.methods": "Çek, e-Transfer",
+    "pricing.insurance": "Ücretleri kontrol edin ve sigorta kapsamınızı doğrulamak için sorun.",
+
+    // Contact Section
+    "contact.title": "Randevu Al",
+    "contact.description": "Ücretsiz 15 dakikalık danışma için iletişime geçin.",
+    "contact.name": "Adınız",
+    "contact.email": "E-posta Adresiniz",
+    "contact.phone": "Telefon Numaranız",
+    "contact.message": "Mesajınız",
+    "contact.submit": "Mesaj Gönder",
+    "contact.success": "Mesajınız başarıyla gönderildi!",
+    "contact.error": "Mesajınızı gönderirken bir hata oluştu. Lütfen tekrar deneyin.",
+    "contact.phone.direct": "Telefon: ",
+    "contact.email.direct": "E-posta: ",
+    "contact.consult": "Ücretsiz 15 dakikalık danışma için şimdi arayın veya e-posta gönderin",
+
+    // Footer
+    "footer.rights": "Tüm hakları saklıdır",
+  }
+};
+
+export default translations;
