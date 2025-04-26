@@ -147,7 +147,7 @@ const ContactSection = () => {
                       onChange={(e) => setServiceType(e.target.value as "psychotherapy")}
                       className="w-4 h-4 text-therapy-primary"
                     />
-                    <span>{language === "tr" ? "Psikoterapi (Ontario sakinleri için)" : "Psychotherapy (for residents of Ontario)"}</span>
+                    <span>{language === "tr" ? "Psikoterapi" : "Psychotherapy"}</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
@@ -158,7 +158,7 @@ const ContactSection = () => {
                       onChange={(e) => setServiceType(e.target.value as "coaching")}
                       className="w-4 h-4 text-therapy-primary"
                     />
-                    <span>{language === "tr" ? "Koçluk (dünya çapında)" : "Coaching (worldwide)"}</span>
+                    <span>{language === "tr" ? "Koçluk" : "Coaching"}</span>
                   </label>
                 </div>
               </div>
