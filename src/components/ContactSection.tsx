@@ -251,7 +251,7 @@ const ContactSection = () => {
               
               <div className="flex justify-center space-x-4 mt-4">
                 <a 
-                  href="https://instagram.com/psychotherapy.aygultatlici" 
+                  href="https://instagram.com/psychotherapy.aygulTATLICI" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-therapy-dark hover:text-therapy-primary transition-colors"

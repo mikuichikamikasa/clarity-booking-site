@@ -15,16 +15,16 @@ const translations: Translations = {
     "nav.language": "Türkçe",
 
     // Hero Section
-    "hero.title": "Aygul Tatlici",
-    "hero.subtitle": "Registered Psychotherapist",
+    "hero.title": "Aygul TATLICI",
+    "hero.subtitle": "Registered Psychotherapist(q)",
     "hero.description": "Helping you navigate anxiety, depression, ADHD, and trauma to regain clarity, motivation, and purpose.",
     "hero.cta": "Book Free Consultation",
     "hero.philosophy": "Healing and transformation begin with authentic care and connection, and change becomes powerful when someone believes in your potential and ability to grow.",
 
     // About Section
     "about.title": "About Me",
-    "about.credentials": "Registered Psychotherapist | Verified by Psychology Today",
-    "about.paragraph1": "I am a Master's-Level practicum student in Counselling Psychology, currently providing therapy under the clinical supervision of an approved supervisor. I'm genuinely looking forward to supporting you on your journey toward healing, growth, and positive change.",
+    "about.credentials": "Registered Psychotherapist(q) | Verified by Psychology Today",
+    "about.paragraph1": "I am a registered psychotherapist(q) practicing in Canada, currently providing therapy under the clinical supervision of an approved supervisor. I'm genuinely looking forward to supporting you on your journey toward healing, growth, and positive change.",
     "about.paragraph2": "I know how overwhelming it can feel to struggle with depression, trauma, anxiety, procrastination, and the pressure of work stress. Feeling stuck and unsure is okay — those challenges are real, and you deserve support. I'm here to walk alongside you, helping you find clarity, healing, and renewed strength when ready.",
     "about.qualifications": "I completed a Master's in Counselling Psychotherapy and have training in ACT, CBT and Solution-Focused Approaches. I have experience of helping adults, kids, struggling with depression, anxiety, PTSD, adjustment disorders, ADHD, specific phobias, burnout and works stress.",
 
@@ -73,6 +73,8 @@ const translations: Translations = {
 
     // Footer
     "footer.rights": "All rights reserved",
+    "footer.disclaimer.title": "Disclaimer",
+    "footer.disclaimer.text": "Coaching is not psychotherapy; coaching does not diagnose or treat mental health conditions. Coaching focuses on personal development, goal achievement, and mindset shifts. It is not a substitute for a serious mental health treatment, diagnosis, or psychotherapy."
   },
   tr: {
     // Navigation
@@ -142,6 +144,8 @@ const translations: Translations = {
 
     // Footer
     "footer.rights": "Tüm hakları saklıdır",
+    "footer.disclaimer.title": "Yasal Uyarı",
+    "footer.disclaimer.text": "Koçluk psikoterapi değildir; koçluk ruh sağlığı durumlarını teşhis veya tedavi etmez. Koçluk kişisel gelişim, hedef belirleme ve zihniyet değişimlerine odaklanır. Ciddi ruh sağlığı tedavisi, teşhisi veya psikoterapinin yerini tutmaz."
   }
 };
 

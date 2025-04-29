@@ -3,7 +3,11 @@ import { Button } from "@/components/ui/button";
 import aygulImage from "/public/lovable-uploads/5a82a45e-8dae-47f5-96bb-e4fbc3aaca10.png";
 
 const HeroSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  
+  // For debugging
+  console.log(`HeroSection rendering with language: ${language}`);
+  console.log(`hero.philosophy translation: ${t("hero.philosophy")}`);
 
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
@@ -40,7 +44,7 @@ const HeroSection = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-therapy-accent shadow-lg transform transition-all duration-300 hover:scale-105">
               <img
                 src={aygulImage}
-                alt="Aygul Tatlici"
+                alt="Aygul TATLICI"
                 className="w-full h-full object-cover object-center"
               />
             </div>

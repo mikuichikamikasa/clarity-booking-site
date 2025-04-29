@@ -1,5 +1,4 @@
-
-import React, { createContext, useState, useContext, ReactNode } from "react";
+import React, { createContext, useState, useContext, ReactNode, useEffect } from "react";
 import translations from "./translations";
 
 type LanguageContextType = {
@@ -11,7 +10,25 @@ type LanguageContextType = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState("en");
+  // Initialize language from localStorage or default to 'en'
+  const [language, setLanguage] = useState(() => {
+    try {
+      const storedLanguage = localStorage.getItem('language');
+      return storedLanguage || 'en';
+    } catch (error) {
+      // In case localStorage is not available
+      return 'en';
+    }
+  });
+
+  // Persist language changes to localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem('language', language);
+    } catch (error) {
+      console.error('Could not save language preference:', error);
+    }
+  }, [language]);
 
   const t = (key: string): string => {
     if (translations[language] && translations[language][key]) {

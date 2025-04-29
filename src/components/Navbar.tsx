@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
@@ -9,7 +8,9 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleLanguage = () => {
-    setLanguage(language === "en" ? "tr" : "en");
+    const newLanguage = language === "en" ? "tr" : "en";
+    console.log(`Switching language from ${language} to ${newLanguage}`);
+    setLanguage(newLanguage);
   };
 
   const toggleMenu = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
           <h1 className="text-xl font-playfair font-semibold text-therapy-primary">
-            Aygul Tatlici
+            Aygul TATLICI
           </h1>
         </div>
 
