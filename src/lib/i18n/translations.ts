@@ -54,7 +54,7 @@ const translations: Translations = {
     "pricing.couples.price": "$250",
     "pricing.note": "Sliding scale available for those who qualify",
     "pricing.payment": "Payment Methods:",
-    "pricing.payment.methods": "Cheque, e-Transfer",
+    "pricing.payment.methods": "Cheque, e-Transfer, cash",
     "pricing.insurance": "Check fees and, if listed, ask to verify your insurance coverage.",
 
     // Contact Section
