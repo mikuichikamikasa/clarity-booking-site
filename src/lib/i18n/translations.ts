@@ -86,7 +86,7 @@ const translations: Translations = {
     "nav.language": "English",
 
     // Hero Section
-    "hero.title": "Aygül Tatlıcı",
+    "hero.title": "Aygül TATLICI",
     "hero.subtitle": "Kayıtlı Psikoterapist",
     "hero.description": "Anksiyete, depresyon, ADHD ve travma ile başa çıkmanıza yardımcı olarak netlik, motivasyon ve amaç kazanmanızı sağlıyorum.",
     "hero.cta": "Ücretsiz Danışma Randevusu Al",
