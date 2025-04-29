@@ -41,33 +41,49 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
+    // Prepare data for Formspree
+    const dataToSend = {
+      ...formData,
+      preferredConsultationDate: date ? format(date, "yyyy-MM-dd") : "Not specified",
+      serviceType: serviceType,
+      _subject: `New Contact Form Submission from ${formData.name}`,
+    };
+
     try {
-      console.log("Sending email to: eypkllas@gmail.com");
-      console.log("Form data:", { 
-        ...formData, 
-        consultationDate: date,
-        serviceType 
+      const response = await fetch("https://formspree.io/f/xpwdqlkg", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataToSend),
       });
-      
-      toast({
-        title: t("contact.success"),
-        description: language === "tr" ? "En kısa sürede size geri döneceğiz!" : "We'll get back to you soon!",
-        variant: "default",
-      });
-      
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-      setDate(undefined);
-      setServiceType(null);
-      
+
+      if (response.ok) {
+        toast({
+          title: t("contact.success"),
+          description: language === "tr" ? "En kısa sürede size geri döneceğiz!" : "We'll get back to you soon!",
+          variant: "default",
+        });
+        
+        // Clear the form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+        setDate(undefined);
+        setServiceType(null);
+      } else {
+        // Handle server errors from Formspree
+        throw new Error("Form submission failed");
+      }
     } catch (error) {
+      console.error("Form submission error:", error);
       toast({
-        title: language === "tr" ? "Hata" : "Error",
+        title: t("contact.error"),
         description: language === "tr" ? "Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin." : "Failed to send message. Please try again.",
         variant: "destructive",
       });
