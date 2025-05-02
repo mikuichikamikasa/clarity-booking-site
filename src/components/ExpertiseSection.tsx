@@ -28,7 +28,7 @@ const ExpertiseSection = () => {
         id: "trauma",
         emoji: "🔄",
         titleKey: "expertise.item4",
-        content: "Specialized support for processing traumatic experiences and managing symptoms of PTSD to foster resilience and recovery. We'll work together to create a safe space where you can process difficult memories at your own pace, develop coping strategies, and rebuild your sense of safety and control."
+        content: "Specialized support for processing traumatic experiences and managing symptoms of PTSD to foster resilience and recovery. We'll work together to create a safe space to develop coping strategies, and rebuild your sense of safety and control."
       },
       {
         id: "burnout",
