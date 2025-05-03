@@ -44,8 +44,11 @@ const HeroSection = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-therapy-accent shadow-lg transform transition-all duration-300 hover:scale-105">
               <img
                 src={aygulImage}
-                alt="Aygul TATLICI"
+                alt={language === "en" ? "Aygul TATLICI - Registered Psychotherapist in Ontario" : "Aygül TATLICI - Ontario'da Kayıtlı Psikoterapist"}
                 className="w-full h-full object-cover object-center"
+                loading="lazy"
+                width="320"
+                height="320"
               />
             </div>
           </div>
