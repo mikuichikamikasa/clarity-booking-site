@@ -79,7 +79,7 @@ const SEO = ({
       {
         "@type": "Offer",
         "name": "Individual Therapy",
-        "price": "120",
+        "price": "140",
         "priceCurrency": "CAD",
         "areaServed": {
           "@type": "City",
@@ -89,7 +89,7 @@ const SEO = ({
       {
         "@type": "Offer",
         "name": "Couples Therapy",
-        "price": "250",
+        "price": "230",
         "priceCurrency": "CAD",
         "areaServed": {
           "@type": "City",

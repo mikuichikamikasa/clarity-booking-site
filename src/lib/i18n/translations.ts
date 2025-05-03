@@ -49,9 +49,9 @@ const translations: Translations = {
     // Pricing Section
     "pricing.title": "Pricing",
     "pricing.individual": "Individual Sessions",
-    "pricing.individual.price": "$120",
+    "pricing.individual.price": "$140",
     "pricing.couples": "Couple Sessions",
-    "pricing.couples.price": "$250",
+    "pricing.couples.price": "230",
     "pricing.note": "Sliding scale available for those who qualify",
     "pricing.payment": "Payment Methods:",
     "pricing.payment.methods": "Cheque, e-Transfer, cash",
@@ -120,9 +120,9 @@ const translations: Translations = {
     // Pricing Section
     "pricing.title": "Ücretlendirme",
     "pricing.individual": "Bireysel Seanslar",
-    "pricing.individual.price": "$120",
+    "pricing.individual.price": "$140",
     "pricing.couples": "Çift Seansları",
-    "pricing.couples.price": "$250",
+    "pricing.couples.price": "$230",
     "pricing.note": "Hak sahipleri için kademeli ücretlendirme mevcuttur",
     "pricing.payment": "Ödeme Yöntemleri:",
     "pricing.payment.methods": "Çek, e-Transfer",
