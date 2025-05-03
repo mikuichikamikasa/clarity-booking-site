@@ -17,7 +17,7 @@ const App = () => (
         <LanguageProvider>
           <Toaster />
           <Sonner />
-          <BrowserRouter basename="/clarity-booking-site">
+          <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="*" element={<NotFound />} />
