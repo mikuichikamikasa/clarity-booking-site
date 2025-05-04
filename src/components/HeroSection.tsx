@@ -1,6 +1,6 @@
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
-import aygulImage from "/public/lovable-uploads/5a82a45e-8dae-47f5-96bb-e4fbc3aaca10.png";
+import aygulImage from "/public/images/profile-photo.png";
 
 const HeroSection = () => {
   const { t, language } = useLanguage();
