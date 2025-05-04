@@ -51,7 +51,7 @@ const translations: Translations = {
     "pricing.individual": "Individual Sessions",
     "pricing.individual.price": "$140",
     "pricing.couples": "Couple Sessions",
-    "pricing.couples.price": "230",
+    "pricing.couples.price": "$230",
     "pricing.note": "Sliding scale available for those who qualify",
     "pricing.payment": "Payment Methods:",
     "pricing.payment.methods": "Cheque, e-Transfer, cash",
