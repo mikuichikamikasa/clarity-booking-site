@@ -13,20 +13,27 @@ const translations: Translations = {
     "nav.pricing": "Pricing",
     "nav.contact": "Contact",
     "nav.language": "Türkçe",
+    "nav.anxiety": "Anxiety",
 
     // Hero Section
     "hero.title": "Aygul TATLICI",
-    "hero.subtitle": "Registered Psychotherapist(q)",
+    "hero.subtitle": "Registered Psychotherapist(Qualifying)",
     "hero.description": "Helping you navigate anxiety, depression, ADHD, and trauma to regain clarity, motivation, and purpose.",
     "hero.cta": "Book Free Consultation",
     "hero.philosophy": "Healing and transformation begin with authentic care and connection, and change becomes powerful when someone believes in your potential and ability to grow.",
 
     // About Section
     "about.title": "About Me",
-    "about.credentials": "Registered Psychotherapist(q) | Verified by Psychology Today",
-    "about.paragraph1": "I am a registered psychotherapist(q) practicing in Canada, currently providing therapy under the clinical supervision of an approved supervisor. I'm genuinely looking forward to supporting you on your journey toward healing, growth, and positive change.",
+    "about.credentials": "Registered Psychotherapist(Qualifying)(MACP) | Verified by Psychology Today",
+    "about.paragraph1": "Welcome, I am a registered psychotherapist(Qualifying) and Coach residing in Canada, currently providing psychotherapy under the clinical supervision of an approved supervisor. I am mainly specializing in supporting people suffering from Anxiety. I'm genuinely looking forward to supporting you on your journey toward healing, growth, and positive change.",
     "about.paragraph2": "I know how overwhelming it can feel to struggle with depression, trauma, anxiety, procrastination, and the pressure of work stress. Feeling stuck and unsure is okay — those challenges are real, and you deserve support. I'm here to walk alongside you, helping you find clarity, healing, and renewed strength when ready.",
     "about.qualifications": "I completed a Master's in Counselling Psychotherapy and have training in ACT, CBT and Solution-Focused Approaches. I have experience of helping adults, kids, struggling with depression, anxiety, PTSD, adjustment disorders, ADHD, specific phobias, burnout and works stress.",
+
+    // Anxiety Section
+    "anxiety.title": "Living with Anxiety",
+    "anxiety.message": "People who live with anxiety are some of the most insightful and courageous individuals in our world. You notice things others might miss. You feel deeply, care deeply, and think carefully about the world around you.",
+    "anxiety.strength": "Anxiety is not a weakness—it's a sign that you care about your life, your choices, and your future. And while anxiety can feel heavy, it doesn't have to hold you back. You have already shown resilience by showing up every day, even when it's hard. Imagine what becomes possible when you work with your anxiety instead of against it. Take the first step to live your life in a full potential, take action today",
+    "anxiety.support": "Support, therapy, and practices like mindfulness and acceptance can help you build space around anxiety, so you can move toward the things that truly matter to you. You don't have to wait for anxiety to disappear to start living fully. You can take small, meaningful steps today toward the life you want—the life your strengths and values are already pointing you toward.",
 
     // Expertise Section
     "expertise.title": "Areas of Expertise",
@@ -84,6 +91,7 @@ const translations: Translations = {
     "nav.pricing": "Ücretlendirme",
     "nav.contact": "İletişim",
     "nav.language": "English",
+    "nav.anxiety": "Anksiyete",
 
     // Hero Section
     "hero.title": "Aygül TATLICI",
@@ -98,6 +106,12 @@ const translations: Translations = {
     "about.paragraph1": "Danışmanlık Psikolojisi alanında yüksek lisans öğrencisiyim ve şu anda onaylı bir süpervizör gözetiminde terapi hizmeti vermekteyim. İyileşme, büyüme ve olumlu değişim yolculuğunuzda size destek olmak için sabırsızlanıyorum.",
     "about.paragraph2": "Depresyon, travma, anksiyete, erteleme ve iş stresinin yarattığı baskıyla mücadele etmenin ne kadar bunaltıcı olabileceğini biliyorum. Takılıp kalmış ve emin olamamak normaldir — bu zorluklar gerçektir ve desteği hak ediyorsunuz. Ben yanınızda olarak, hazır olduğunuzda netlik, iyileşme ve yenilenmiş güç bulmanıza yardımcı olmak için buradayım.",
     "about.qualifications": "Danışmanlık Psikoterapisi alanında yüksek lisans yaptım ve ACT, BDT ve Çözüm Odaklı Yaklaşımlar konusunda eğitimim var. Depresyon, anksiyete, TSSB, uyum bozuklukları, ADHD, özel fobiler, tükenmişlik ve iş stresi ile mücadele eden yetişkinlere ve çocuklara yardım etme deneyimim var.",
+
+    // Anxiety Section
+    "anxiety.title": "Anksiyete ile Yaşamak",
+    "anxiety.message": "Anksiyete ile yaşayan insanlar dünyamızdaki en anlayışlı ve cesur bireylerden bazılarıdır. Başkalarının kaçırabileceği şeyleri fark edersiniz. Derinden hisseder, derinden önemser ve çevrenizdeki dünya hakkında dikkatle düşünürsünüz.",
+    "anxiety.strength": "Anksiyete bir zayıflık değildir—hayatınızı, seçimlerinizi ve geleceğinizi önemsediğinizin bir işaretidir. Ve anksiyete ağır hissettirse de, sizi geri tutmak zorunda değildir. Zor olduğunda bile her gün ortaya çıkarak zaten direnç gösterdiniz. Anksiyetenizle ona karşı değil, onunla birlikte çalıştığınızda neyin mümkün olduğunu hayal edin. Hayatınızı tam bir potansiyelde yaşamak için ilk adımı atın, bugün harekete geçin",
+    "anxiety.support": "Destek, terapi ve farkındalık ve kabul gibi uygulamalar, anksiyete etrafında alan oluşturmanıza yardımcı olabilir, böylece sizin için gerçekten önemli olan şeylere doğru ilerleyebilirsiniz. Tam anlamıyla yaşamaya başlamak için anksiyetenin ortadan kalkmasını beklemeniz gerekmez. Bugün istediğiniz hayata doğru—güçlerinizin ve değerlerinizin sizi zaten işaret ettiği hayata doğru—küçük, anlamlı adımlar atabilirsiniz.",
 
     // Expertise Section
     "expertise.title": "Uzmanlık Alanları",

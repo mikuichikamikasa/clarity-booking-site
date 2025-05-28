@@ -23,12 +23,12 @@ const SEO = ({
   const pageUrl = `${siteUrl}${pagePath.startsWith("/") ? pagePath : `/${pagePath}`}`;
 
   const defaultTitle = language === "en" 
-    ? "Aygul Tatlici | Registered Psychotherapist(q) in Toronto, Ontario" 
-    : "Aygül Tatlıcı | Toronto, Ontario'da Kayıtlı Psikoterapist(q)";
+    ? "Aygul Tatlici | Registered Psychotherapist(Qualifying) in Toronto, Ontario" 
+    : "Aygül Tatlıcı | Toronto, Ontario'da Kayıtlı Psikoterapist(Qualifying)";
   
   const defaultDescription = language === "en"
-    ? "Toronto-based Registered Psychotherapist(q) specializing in anxiety, depression, ADHD, and trauma therapy. Serving clients throughout the GTA. Book a free consultation today."
-    : "Toronto merkezli kayıtlı psikoterapist(q). Anksiyete, depresyon, ADHD ve travma terapisi. Bugün ücretsiz danışma randevusu alın.";
+    ? "Toronto-based Registered Psychotherapist(Qualifying) specializing in anxiety, depression, ADHD, and trauma therapy. Serving clients throughout the GTA. Book a free consultation today."
+    : "Toronto merkezli kayıtlı psikoterapist(Qualifying). Anksiyete, depresyon, ADHD ve travma terapisi. Bugün ücretsiz danışma randevusu alın.";
 
   const siteTitle = title ? `${title} | Aygul Tatlici` : defaultTitle;
   const siteDescription = description || defaultDescription;
@@ -38,7 +38,7 @@ const SEO = ({
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Aygul Tatlici",
-    "jobTitle": "Registered Psychotherapist(q)",
+    "jobTitle": "Registered Psychotherapist(Qualifying)",
     "image": `${siteUrl}/images/calm-blue-waves.jpg`,
     "telephone": "+13656070532",
     "email": "psychaygul@gmail.com",
@@ -344,17 +344,6 @@ const SEO = ({
       <link rel="icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       <link rel="manifest" href="/manifest.json" />
-
-      {/* Google Analytics - Replace G-XXXXXXXXXX with your actual ID when you create one */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-      <script>
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-XXXXXXXXXX');
-        `}
-      </script>
     </Helmet>
   );
 };

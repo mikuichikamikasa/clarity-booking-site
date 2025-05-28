@@ -49,6 +49,12 @@ const Navbar = () => {
             {t("nav.about")}
           </button>
           <button 
+            onClick={() => scrollToSection("anxiety")} 
+            className="text-therapy-dark hover:text-therapy-primary transition-colors"
+          >
+            {t("nav.anxiety")}
+          </button>
+          <button 
             onClick={() => scrollToSection("expertise")} 
             className="text-therapy-dark hover:text-therapy-primary transition-colors"
           >
@@ -66,30 +72,45 @@ const Navbar = () => {
           >
             {t("nav.contact")}
           </button>
-        </div>
 
-        <div className="flex items-center">
-          <Button 
+          {/* Language Toggle Button */}
+          <Button
+            variant="ghost"
             onClick={toggleLanguage}
-            variant="ghost" 
-            size="sm" 
-            className="mr-2 text-therapy-primary hover:text-therapy-primary hover:bg-therapy-muted"
+            className="flex items-center text-therapy-dark hover:text-therapy-primary"
           >
-            <Globe size={16} className="mr-1" />
+            <Globe className="mr-1 h-4 w-4" />
             {t("nav.language")}
           </Button>
+        </div>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden p-2 focus:outline-none"
-          >
-            <div className="w-6 flex flex-col gap-1">
-              <span className={`bg-therapy-primary h-0.5 w-full block transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-              <span className={`bg-therapy-primary h-0.5 w-full block transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-              <span className={`bg-therapy-primary h-0.5 w-full block transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
-            </div>
-          </button>
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <Button variant="ghost" onClick={toggleMenu} className="p-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {isMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </Button>
         </div>
       </div>
 
@@ -110,6 +131,12 @@ const Navbar = () => {
               {t("nav.about")}
             </button>
             <button 
+              onClick={() => scrollToSection("anxiety")} 
+              className="py-2 text-left text-therapy-dark hover:text-therapy-primary transition-colors"
+            >
+              {t("nav.anxiety")}
+            </button>
+            <button 
               onClick={() => scrollToSection("expertise")} 
               className="py-2 text-left text-therapy-dark hover:text-therapy-primary transition-colors"
             >
@@ -127,6 +154,14 @@ const Navbar = () => {
             >
               {t("nav.contact")}
             </button>
+            <Button
+              variant="ghost"
+              onClick={toggleLanguage}
+              className="flex items-center justify-start py-2 text-therapy-dark hover:text-therapy-primary"
+            >
+              <Globe className="mr-1 h-4 w-4" />
+              {t("nav.language")}
+            </Button>
           </div>
         </div>
       )}
