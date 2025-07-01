@@ -1,4 +1,3 @@
-
 interface Translations {
   [key: string]: {
     [key: string]: string;
@@ -57,7 +56,7 @@ const translations: Translations = {
     // Pricing Section
     "pricing.title": "Pricing",
     "pricing.individual": "Individual Sessions",
-    "pricing.individual.price": "$145",
+    "pricing.individual.price": "$140",
     "pricing.couples": "Couple Sessions",
     "pricing.couples.price": "$230",
     "pricing.note": "Sliding scale available for those who qualify",
@@ -135,7 +134,7 @@ const translations: Translations = {
     // Pricing Section
     "pricing.title": "Ücretlendirme",
     "pricing.individual": "Bireysel Seanslar",
-    "pricing.individual.price": "$145",
+    "pricing.individual.price": "$140",
     "pricing.couples": "Çift Seansları",
     "pricing.couples.price": "$230",
     "pricing.note": "Hak sahipleri için kademeli ücretlendirme mevcuttur",
