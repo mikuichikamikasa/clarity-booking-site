@@ -341,7 +341,7 @@ const SEO = ({
       <link rel="preload" href="/assets/5a82a45e-8dae-47f5-96bb-e4fbc3aaca10-CJGCoTln.png" as="image" />
       
       {/* Favicon */}
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       <link rel="manifest" href="/manifest.json" />
     </Helmet>
