@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
@@ -72,6 +73,12 @@ const Navbar = () => {
           >
             {t("nav.contact")}
           </button>
+          <Link 
+            to="/newsletter" 
+            className="text-therapy-dark hover:text-therapy-primary transition-colors"
+          >
+            Newsletter
+          </Link>
 
           {/* Language Toggle Button */}
           <Button
@@ -154,6 +161,13 @@ const Navbar = () => {
             >
               {t("nav.contact")}
             </button>
+            <Link 
+              to="/newsletter" 
+              className="py-2 text-left text-therapy-dark hover:text-therapy-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Newsletter
+            </Link>
             <Button
               variant="ghost"
               onClick={toggleLanguage}
