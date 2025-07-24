@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 interface NewsletterContent {
   title: string;
@@ -93,9 +93,14 @@ const Newsletter = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <SEO 
+      <Helmet
         title={`${newsletterData.title} | Aygul TATLICI`}
-        description={`Read the latest news from Aygul TATLICI: ${newsletterData.title}`}
+        meta={[
+          {
+            name: "description",
+            content: `Read the latest news from Aygul TATLICI: ${newsletterData.title}`,
+          },
+        ]}
       />
       <Navbar />
       

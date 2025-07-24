@@ -1,4 +1,4 @@
-import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { useLanguage } from "../lib/i18n/LanguageContext";
 
 const AnxietySection = () => {
   const { t } = useLanguage();

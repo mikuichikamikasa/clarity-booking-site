@@ -17,4 +17,11 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  esbuild: {
+    loader: 'tsx',
+    include: /src\/.*\.[jt]sx?$/,
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom']
+  }
 }));

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { useLanguage } from "../lib/i18n/LanguageContext";
 
 const ExpertiseSection = () => {
   const { t, language } = useLanguage();

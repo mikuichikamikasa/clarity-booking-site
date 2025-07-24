@@ -1,18 +1,19 @@
 import { useState } from "react";
-import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Card, CardContent } from "@/components/ui/card";
-import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "../lib/i18n/LanguageContext";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { Card, CardContent } from "./ui/card";
+import { useToast } from "../hooks/use-toast";
 import { Mail, Phone } from "lucide-react";
 import { format } from "date-fns";
-import { Calendar } from "@/components/ui/calendar";
+import { Calendar } from "./ui/calendar";
+import { CalendarIcon } from "lucide-react";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "./ui/popover";
 
 const ContactSection = () => {
   const { t, language } = useLanguage();

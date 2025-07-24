@@ -1,6 +1,5 @@
-// import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { useLanguage } from "../lib/i18n/LanguageContext";
 
 interface SEOProps {
   title?: string;

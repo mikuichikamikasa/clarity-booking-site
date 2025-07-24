@@ -1,12 +1,12 @@
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import AnxietySection from "@/components/AnxietySection";
-import ExpertiseSection from "@/components/ExpertiseSection";
-import PricingSection from "@/components/PricingSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/AboutSection";
+import AnxietySection from "../components/AnxietySection";
+import ExpertiseSection from "../components/ExpertiseSection";
+import PricingSection from "../components/PricingSection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
+import SEO from "../components/SEO";
 
 const Index = () => {
   return (

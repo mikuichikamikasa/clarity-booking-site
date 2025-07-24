@@ -1,6 +1,6 @@
 
-import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useLanguage } from "../lib/i18n/LanguageContext";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const PricingSection = () => {
   const { t } = useLanguage();

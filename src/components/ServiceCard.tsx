@@ -1,11 +1,12 @@
 
-import React from 'react';
-import { Card, CardContent } from "@/components/ui/card";
+import { useState } from "react";
+import { Card, CardContent } from "./ui/card";
+import { Button } from "./ui/button";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+} from "./ui/collapsible";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface ServiceCardProps {
@@ -15,7 +16,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ title, description, content }: ServiceCardProps) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Card className="mb-6 hover:shadow-lg transition-all duration-300">

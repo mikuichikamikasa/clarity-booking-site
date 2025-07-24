@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { Button } from "@/components/ui/button";
+import { useLanguage } from "../lib/i18n/LanguageContext";
+import { Button } from "./ui/button";
 import { Globe } from "lucide-react";
 
 const Navbar = () => {

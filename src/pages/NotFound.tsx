@@ -1,10 +1,10 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import SEO from "@/components/SEO";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { useLanguage } from "@/lib/i18n/LanguageContext";
+import SEO from "../components/SEO";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { Button } from "../components/ui/button";
+import { useLanguage } from "../lib/i18n/LanguageContext";
 
 const NotFound = () => {
   const location = useLocation();
