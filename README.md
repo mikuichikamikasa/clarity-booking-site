@@ -183,4 +183,4 @@ This is a professional, bilingual (English/Turkish) psychotherapy booking websit
 - Both English and Turkish speaking clients
 - Adults and couples seeking professional help
 
-This comprehensive guide provides everything needed to recreate the professional psychotherapy booking website in Lovable with all functionality, content, and design elements preserved.
+This comprehensive guide provides everything needed to recreate the professional psychotherapy booking website with all functionality, content, and design elements preserved.

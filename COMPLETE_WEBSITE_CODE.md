@@ -601,4 +601,4 @@ const translations = {
 - **Specialties**: Anxiety, Depression, ADHD, Trauma, PTSD, Stress, Burnout
 - **Instagram**: @psychotherapy.aygulTATLICI
 
-This complete code provides everything needed to recreate the professional psychotherapy booking website in Lovable with all the design styles, functionality, and content preserved. 
+This complete code provides everything needed to recreate the professional psychotherapy booking website with all the design styles, functionality, and content preserved. 
