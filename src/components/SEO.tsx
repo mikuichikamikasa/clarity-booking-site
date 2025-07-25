@@ -17,7 +17,7 @@ const SEO = ({
   pagePath = "/",
 }: SEOProps) => {
   const { language } = useLanguage();
-  const domain = process.env.NEXT_PUBLIC_DOMAIN || "coachingandtherapysolutions.com";
+  const domain = import.meta.env.VITE_DOMAIN || "coachingandtherapysolutions.com";
   const siteUrl = `https://${domain}`;
   const pageUrl = `${siteUrl}${pagePath.startsWith("/") ? pagePath : `/${pagePath}`}`;
 
