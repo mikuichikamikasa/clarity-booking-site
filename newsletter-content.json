@@ -1,0 +1,20 @@
+{
+  "title": "Newsletter",
+  "textSize": 2,
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Welcome to our monthly newsletter! This is where I share updates, insights, and helpful information about mental health and wellness."
+    }
+  ],
+  "instructions": {
+    "howToEdit": "To update this newsletter:",
+    "steps": [
+      "1. Change the 'title' to your desired newsletter title",
+      "2. Set 'textSize' to 1 (small), 2 (medium), or 3 (large)",
+      "3. Edit the 'text' in each paragraph object",
+      "4. You can add more paragraphs by copying the paragraph format",
+      "5. Save this file and the website will automatically update"
+    ]
+  }
+} 
