@@ -110,16 +110,18 @@ const Newsletter = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-therapy-primary mb-4">
               {newsletterData.title}
             </h1>
-            <p className="text-lg md:text-xl text-therapy-dark/80 max-w-3xl mx-auto">
-              Your source for insights on mental wellness and personal growth.
-            </p>
+            {newsletterData.content[0] && (
+              <p className="text-lg md:text-xl text-therapy-dark/80 max-w-3xl mx-auto">
+                {newsletterData.content[0].text}
+              </p>
+            )}
           </div>
         </section>
 
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8 md:p-12 animate-fade-up">
-              {newsletterData.content.map((item, index) => (
+              {newsletterData.content.slice(1).map((item, index) => (
                 <div key={index} className="mb-8 last:mb-0">
                   {item.type === "paragraph" && (
                     <p className={`${getTextSizeClass(newsletterData.textSize)} leading-relaxed text-gray-800`}>
