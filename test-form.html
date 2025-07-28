@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Google Form</title>
+</head>
+<body>
+    <h2>Test Form Submission</h2>
+    
+    <!-- Test Form with current field ID -->
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdI-gcxuk75e4T3xodo0rbdveouQUEwTfId4Nd0IjIrq7LKnw/formResponse" method="post" target="hidden_iframe">
+        <label>Email (current field ID):</label><br>
+        <input type="email" name="entry.1520451405" required><br><br>
+        <button type="submit">Test Current ID</button>
+    </form>
+    
+    <hr>
+    
+    <!-- Test with common field IDs -->
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdI-gcxuk75e4T3xodo0rbdveouQUEwTfId4Nd0IjIrq7LKnw/formResponse" method="post" target="hidden_iframe2">
+        <label>Email (common field ID):</label><br>
+        <input type="email" name="entry.1" required><br><br>
+        <button type="submit">Test ID 1</button>
+    </form>
+    
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+    <iframe name="hidden_iframe2" style="display:none;"></iframe>
+    
+    <script>
+        // Show success message for any form submission
+        document.addEventListener('submit', function(e) {
+            setTimeout(() => alert('Form submitted! Check your Google Form responses.'), 500);
+        });
+    </script>
+</body>
+</html>

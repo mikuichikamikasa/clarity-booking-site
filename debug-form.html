@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Google Form</title>
+</head>
+<body>
+    <h2>Debug Form - Let's test different approaches</h2>
+    
+    <!-- Test 1: Basic form (current approach) -->
+    <h3>Test 1: Basic Form</h3>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdI-gcxuk75e4T3xodo0rbdveouQUEwTfId4Nd0IjIrq7LKnw/formResponse" method="post" target="iframe1">
+        <input type="email" name="entry.1520451405" placeholder="Enter email for Test 1" required>
+        <button type="submit">Submit Test 1</button>
+    </form>
+    <iframe name="iframe1" style="display:none;"></iframe>
+    
+    <hr>
+    
+    <!-- Test 2: Form with common hidden fields -->
+    <h3>Test 2: With Hidden Fields</h3>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdI-gcxuk75e4T3xodo0rbdveouQUEwTfId4Nd0IjIrq7LKnw/formResponse" method="post" target="iframe2">
+        <input type="email" name="entry.1520451405" placeholder="Enter email for Test 2" required>
+        <input type="hidden" name="fvv" value="1">
+        <input type="hidden" name="partialResponse" value="[null,null,&quot;123456789&quot;]">
+        <input type="hidden" name="pageHistory" value="0">
+        <input type="hidden" name="fbzx" value="123456789">
+        <button type="submit">Submit Test 2</button>
+    </form>
+    <iframe name="iframe2" style="display:none;"></iframe>
+    
+    <hr>
+    
+    <!-- Test 3: Direct submission (will redirect) -->
+    <h3>Test 3: Direct Submission</h3>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdI-gcxuk75e4T3xodo0rbdveouQUEwTfId4Nd0IjIrq7LKnw/formResponse" method="post">
+        <input type="email" name="entry.1520451405" placeholder="Enter email for Test 3" required>
+        <button type="submit">Submit Test 3 (will redirect)</button>
+    </form>
+    
+    <script>
+        document.addEventListener('submit', function(e) {
+            const form = e.target;
+            const testNumber = form.querySelector('button').textContent;
+            console.log('Submitting:', testNumber);
+            
+            // Show message after submission
+            setTimeout(() => {
+                alert(`${testNumber} submitted! Check your Google Form responses.`);
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

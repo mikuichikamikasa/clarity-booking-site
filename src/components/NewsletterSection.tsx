@@ -87,6 +87,11 @@ const NewsletterSection = () => {
                   }, 500);
                 }}
               >
+                {/* Hidden fields required by Google Forms */}
+                <input type="hidden" name="fvv" value="1" />
+                <input type="hidden" name="pageHistory" value="0" />
+                <input type="hidden" name="fbzx" value="1520451405" />
+                
                 <input
                   type="email"
                   name="entry.1520451405"
