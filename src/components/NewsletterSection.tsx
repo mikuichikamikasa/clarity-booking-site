@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useLanguage } from "../lib/i18n/LanguageContext";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { useToast } from "./ui/use-toast";
 
 interface NewsletterContent {
   title: string;
@@ -12,10 +9,7 @@ interface NewsletterContent {
 }
 
 const NewsletterSection = () => {
-  const { t, language } = useLanguage();
-  const { toast } = useToast();
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { language } = useLanguage();
   const [newsletterData, setNewsletterData] = useState<NewsletterContent | null>(null);
 
   useEffect(() => {
@@ -40,36 +34,6 @@ const NewsletterSection = () => {
 
     loadNewsletterContent();
   }, []);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      // Here you can add your newsletter signup logic
-      // For now, we'll just show a success message
-      
-      toast({
-        title: language === "en" ? "Success!" : "Başarılı!",
-        description: language === "en" 
-          ? "Thank you for subscribing to our newsletter!" 
-          : "Bültenimize abone olduğunuz için teşekkürler!",
-        variant: "default",
-      });
-      
-      setEmail("");
-    } catch (error) {
-      toast({
-        title: language === "en" ? "Error" : "Hata",
-        description: language === "en" 
-          ? "Failed to subscribe. Please try again." 
-          : "Abone olamadık. Lütfen tekrar deneyin.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   if (!newsletterData) {
     return (
@@ -101,26 +65,27 @@ const NewsletterSection = () => {
               {language === "en" ? newsletterData.subscriptionText : "Aylık güncellemeler için abone olun"}
             </p>
             
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <Input
-                type="email"
-                placeholder={language === "en" ? "Enter your email" : "E-posta adresinizi girin"}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="flex-1 text-center sm:text-left"
-              />
-              <Button 
-                type="submit" 
-                disabled={isSubmitting}
-                className="bg-therapy-primary hover:bg-therapy-primary/90 text-white px-8 py-3 transition-transform transform hover:scale-105"
-              >
-                {isSubmitting 
-                  ? (language === "en" ? "Subscribing..." : "Abone oluyor...") 
-                  : (language === "en" ? "Subscribe" : "Abone Ol")
-                }
-              </Button>
-            </form>
+            {/* 
+              STEP 3: Replace this entire div with your ConvertKit embed code
+              Your ConvertKit form will go here - just paste the embed code ConvertKit gives you
+            */}
+            <div className="max-w-md mx-auto">
+              {/* Temporary fallback form - replace with ConvertKit embed */}
+              <form className="flex flex-col sm:flex-row gap-4">
+                <input
+                  type="email"
+                  placeholder={language === "en" ? "Enter your email" : "E-posta adresinizi girin"}
+                  required
+                  className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-therapy-primary focus:border-transparent text-center sm:text-left"
+                />
+                <button 
+                  type="submit" 
+                  className="bg-therapy-primary hover:bg-therapy-primary/90 text-white px-8 py-3 rounded-lg transition-transform transform hover:scale-105"
+                >
+                  {language === "en" ? "Subscribe" : "Abone Ol"}
+                </button>
+              </form>
+            </div>
           </div>
           
           <p className="text-xs text-therapy-dark/60">
