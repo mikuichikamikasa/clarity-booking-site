@@ -40,17 +40,7 @@ const PricingSection = () => {
           </Card>
         </div>
         
-        <div className="mt-12 max-w-2xl mx-auto text-center">
-          <p className="text-therapy-dark mb-4">
-            {t("pricing.note")}
-          </p>
-          <p className="text-therapy-dark mb-2">
-            <span className="font-medium">{t("pricing.payment")}</span> {t("pricing.payment.methods")}
-          </p>
-          <p className="text-sm text-gray-500 mt-6">
-            {t("pricing.insurance")}
-          </p>
-        </div>
+
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useLanguage } from "../lib/i18n/LanguageContext";
 import { Button } from "./ui/button";
 import { Globe } from "lucide-react";
@@ -7,6 +7,8 @@ import { Globe } from "lucide-react";
 const Navbar = () => {
   const { t, language, setLanguage } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleLanguage = () => {
     const newLanguage = language === "en" ? "tr" : "en";
@@ -19,9 +21,22 @@ const Navbar = () => {
   };
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    // If we're not on the home page, navigate to home page first
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      // We're already on home page, just scroll
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
     setIsMenuOpen(false);
   };
@@ -30,9 +45,9 @@ const Navbar = () => {
     <nav className="bg-white/80 backdrop-blur-md fixed w-full z-50 shadow-sm">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
-          <h1 className="text-xl font-playfair font-semibold text-therapy-primary">
+          <Link to="/" className="text-xl font-playfair font-semibold text-therapy-primary hover:text-therapy-primary/80 transition-colors">
             Aygul TATLICI
-          </h1>
+          </Link>
         </div>
 
         {/* Desktop Menu */}
@@ -68,17 +83,17 @@ const Navbar = () => {
             {t("nav.pricing")}
           </button>
           <button 
+            onClick={() => scrollToSection("newsletter")} 
+            className="text-therapy-dark hover:text-therapy-primary transition-colors"
+          >
+            Newsletter
+          </button>
+          <button 
             onClick={() => scrollToSection("contact")} 
             className="text-therapy-dark hover:text-therapy-primary transition-colors"
           >
             {t("nav.contact")}
           </button>
-          <Link 
-            to="/newsletter" 
-            className="text-therapy-dark hover:text-therapy-primary transition-colors"
-          >
-            Newsletter
-          </Link>
 
           {/* Language Toggle Button */}
           <Button
@@ -156,18 +171,17 @@ const Navbar = () => {
               {t("nav.pricing")}
             </button>
             <button 
+              onClick={() => scrollToSection("newsletter")} 
+              className="py-2 text-left text-therapy-dark hover:text-therapy-primary transition-colors"
+            >
+              Newsletter
+            </button>
+            <button 
               onClick={() => scrollToSection("contact")} 
               className="py-2 text-left text-therapy-dark hover:text-therapy-primary transition-colors"
             >
               {t("nav.contact")}
             </button>
-            <Link 
-              to="/newsletter" 
-              className="py-2 text-left text-therapy-dark hover:text-therapy-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Newsletter
-            </Link>
             <Button
               variant="ghost"
               onClick={toggleLanguage}
