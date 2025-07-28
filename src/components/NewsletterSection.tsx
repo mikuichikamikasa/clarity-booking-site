@@ -84,9 +84,6 @@ const NewsletterSection = () => {
                 onSubmit={() => {
                   setTimeout(() => {
                     alert(language === "en" ? "Thank you for subscribing!" : "Abone olduğunuz için teşekkürler!");
-                    // Reset form after submission
-                    const form = document.querySelector('form[target="hidden_iframe"]') as HTMLFormElement;
-                    if (form) form.reset();
                   }, 500);
                 }}
               >
