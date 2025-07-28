@@ -68,7 +68,7 @@ const NewsletterSection = () => {
             {/* Google Forms Integration - Completely FREE & Unlimited */}
             <div className="max-w-md mx-auto">
               <iframe
-                src="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/viewform?embedded=true"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdI-gcxuk75e4T3xodo0rbdveouQUEwTfId4Nd0IjIrq7LKnw/viewform?embedded=true"
                 width="100%" 
                 height="300"
                 style={{ border: 'none' }}
@@ -81,7 +81,7 @@ const NewsletterSection = () => {
               
               {/* Custom styled form that submits to Google Forms */}
               <form 
-                action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSdI-gcxuk75e4T3xodo0rbdveouQUEwTfId4Nd0IjIrq7LKnw/formResponse"
                 method="post"
                 target="hidden_iframe"
                 className="flex flex-col sm:flex-row gap-4"
@@ -93,7 +93,7 @@ const NewsletterSection = () => {
               >
                 <input
                   type="email"
-                  name="entry.YOUR_EMAIL_FIELD_ID"
+                  name="entry.1520451405"
                   placeholder={language === "en" ? "Enter your email" : "E-posta adresinizi girin"}
                   required
                   className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-therapy-primary focus:border-transparent text-center sm:text-left"
