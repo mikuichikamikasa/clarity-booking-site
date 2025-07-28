@@ -65,16 +65,14 @@ const NewsletterSection = () => {
               {language === "en" ? newsletterData.subscriptionText : "Aylık güncellemeler için abone olun"}
             </p>
             
-            {/* 
-              STEP 3: Replace this entire div with your ConvertKit embed code
-              Your ConvertKit form will go here - just paste the embed code ConvertKit gives you
-            */}
+            {/* Google Forms Integration - Completely FREE & Unlimited */}
             <div className="max-w-md mx-auto">
-              {/* Hidden iframe for form submission */}
+              {/* Hidden iframe to handle form submission */}
               <iframe 
                 name="hidden_iframe" 
                 id="hidden_iframe" 
                 style={{ display: 'none' }}
+                title="Hidden form handler"
               ></iframe>
               
               {/* Custom styled form that submits to Google Forms */}
@@ -83,16 +81,18 @@ const NewsletterSection = () => {
                 method="post"
                 target="hidden_iframe"
                 className="flex flex-col sm:flex-row gap-4"
-                onSubmit={(e) => {
-                  // Show success message after form submission
+                onSubmit={() => {
                   setTimeout(() => {
-                    alert(language === "en" ? "Thank you for subscribing to our newsletter!" : "Bültenimize abone olduğunuz için teşekkürler!");
-                    (e.target as HTMLFormElement).reset();
+                    alert(language === "en" ? "Thank you for subscribing!" : "Abone olduğunuz için teşekkürler!");
+                    // Reset form after submission
+                    const form = document.querySelector('form[target="hidden_iframe"]') as HTMLFormElement;
+                    if (form) form.reset();
                   }, 500);
                 }}
               >
                 <input
                   type="email"
+                  name="entry.1520451405"
                   placeholder={language === "en" ? "Enter your email" : "E-posta adresinizi girin"}
                   required
                   className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-therapy-primary focus:border-transparent text-center sm:text-left"
