@@ -70,8 +70,27 @@ const NewsletterSection = () => {
               Your ConvertKit form will go here - just paste the embed code ConvertKit gives you
             */}
             <div className="max-w-md mx-auto">
-              {/* Temporary fallback form - replace with ConvertKit embed */}
-              <form className="flex flex-col sm:flex-row gap-4">
+              {/* Hidden iframe for form submission */}
+              <iframe 
+                name="hidden_iframe" 
+                id="hidden_iframe" 
+                style={{ display: 'none' }}
+              ></iframe>
+              
+              {/* Custom styled form that submits to Google Forms */}
+              <form 
+                action="https://docs.google.com/forms/d/e/1FAIpQLSdI-gcxuk75e4T3xodo0rbdveouQUEwTfId4Nd0IjIrq7LKnw/formResponse"
+                method="post"
+                target="hidden_iframe"
+                className="flex flex-col sm:flex-row gap-4"
+                onSubmit={(e) => {
+                  // Show success message after form submission
+                  setTimeout(() => {
+                    alert(language === "en" ? "Thank you for subscribing to our newsletter!" : "Bültenimize abone olduğunuz için teşekkürler!");
+                    (e.target as HTMLFormElement).reset();
+                  }, 500);
+                }}
+              >
                 <input
                   type="email"
                   placeholder={language === "en" ? "Enter your email" : "E-posta adresinizi girin"}
