@@ -18,12 +18,6 @@ const AboutSection = () => {
           <div className="space-y-6 text-gray-700">
             <p>{t("about.paragraph1")}</p>
             <p>{t("about.paragraph2")}</p>
-            
-            <div className="p-8 rounded-xl shadow-sm my-8">
-              <p className="text-blue-800 text-xl md:text-2xl font-semibold text-center leading-relaxed tracking-wide">
-                Healing and transformation begin with authentic care and connection, and change becomes powerful when someone believes in your potential and ability to grow.
-              </p>
-            </div>
           </div>
         </div>
       </div>
